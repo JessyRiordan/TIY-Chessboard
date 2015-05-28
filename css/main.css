@@ -95,7 +95,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
    .container {
-       border: 1px solid;
        width: 80%; margin: 0 auto;
        min-width: 1in;
        max-width: 6in;
@@ -104,6 +103,15 @@ textarea {
    .chessboard {
      position: relative;
    }
+
+   .heading .letters {
+       margin: 0; padding: 0;
+       display: inline-block;
+       width: 12.5%;
+       float: left;
+       font-size: 200%;
+       text-align: center;
+     }
 
    .chessboard .row {
      margin: 0; padding: 0;
@@ -118,9 +126,11 @@ textarea {
    }
 
    .chessboard .row::before {
+     margin-right: 5%;
      right: 100%;
    }
    .chessboard .row::after {
+     margin-left: 5%;
      left: 100%;
    }
 
@@ -180,6 +190,10 @@ textarea {
    }
 
    .square:nth-child(even) {
+     background-color: deeppink;
+   }
+
+   .buttons buttons{
      background-color: deeppink;
    }
 
