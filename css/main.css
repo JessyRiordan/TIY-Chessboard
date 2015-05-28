@@ -94,7 +94,94 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   .container {
+       border: 1px solid;
+       width: 80%; margin: 0 auto;
+       min-width: 1in;
+       max-width: 6in;
+   }
 
+   .chessboard {
+     position: relative;
+   }
+
+   .chessboard .row {
+     margin: 0; padding: 0;
+     position:relative;
+     clear: both;
+   }
+
+   .chessboard .row::before,
+   .chessboard .row::after {
+     font-size: 200%;
+     position: absolute;
+   }
+
+   .chessboard .row::before {
+     right: 100%;
+   }
+   .chessboard .row::after {
+     left: 100%;
+   }
+
+   .chessboard .rank-1::before,
+   .chessboard .rank-1::after {
+     content: '1';
+   }
+
+   .chessboard .rank-2::before,
+   .chessboard .rank-2::after {
+     content: '2';
+   }
+
+   .chessboard .rank-3::before,
+   .chessboard .rank-3::after {
+     content: '3';
+   }
+
+   .chessboard .rank-4::before,
+   .chessboard .rank-4::after {
+     content: '4';
+   }
+
+   .chessboard .rank-5::before,
+   .chessboard .rank-5::after {
+     content: '5';
+   }
+
+   .chessboard .rank-6::before,
+   .chessboard .rank-6::after {
+     content: '6';
+   }
+
+   .chessboard .rank-7::before,
+   .chessboard .rank-7::after {
+     content: '7';
+   }
+
+   .chessboard .rank-8::before,
+   .chessboard .rank-8::after {
+     content: '8';
+   }
+
+   .chessboard .square {
+       display: block;
+       background-color: hotpink;
+       width: 12.5%; padding-bottom: 12.5%;
+       outline: 1px solid;
+       float: left
+   }
+
+   .row:nth-child(even) .square:nth-child(even) {
+     background-color: hotpink;
+   }
+   .row:nth-child(even) .square:nth-child(odd) {
+     background-color: deeppink;
+   }
+
+   .square:nth-child(even) {
+     background-color: deeppink;
+   }
 
 
 
