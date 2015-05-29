@@ -94,7 +94,176 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   .container {
+       width: 80%; margin: 0 auto;
+       min-width: 1in;
+       max-width: 6in;
+   }
 
+   .chessboard {
+     position: relative;
+   }
+
+   .heading .letters {
+       margin: 0; padding: 0;
+       display: inline-block;
+       width: 12.5%;
+       float: left;
+       font-size: 200%;
+       text-align: center;
+     }
+
+   .chessboard .row {
+     margin: 0; padding: 0;
+     position:relative;
+     clear: both;
+   }
+
+   .chessboard .row::before,
+   .chessboard .row::after {
+     font-size: 200%;
+     position: absolute;
+   }
+
+   .chessboard .row::before {
+     margin-right: 5%;
+     right: 100%;
+   }
+   .chessboard .row::after {
+     margin-left: 5%;
+     left: 100%;
+   }
+
+   .chessboard .rank-1::before,
+   .chessboard .rank-1::after {
+     content: '1';
+   }
+
+   .chessboard .rank-2::before,
+   .chessboard .rank-2::after {
+     content: '2';
+   }
+
+   .chessboard .rank-3::before,
+   .chessboard .rank-3::after {
+     content: '3';
+   }
+
+   .chessboard .rank-4::before,
+   .chessboard .rank-4::after {
+     content: '4';
+   }
+
+   .chessboard .rank-5::before,
+   .chessboard .rank-5::after {
+     content: '5';
+   }
+
+   .chessboard .rank-6::before,
+   .chessboard .rank-6::after {
+     content: '6';
+   }
+
+   .chessboard .rank-7::before,
+   .chessboard .rank-7::after {
+     content: '7';
+   }
+
+   .chessboard .rank-8::before,
+   .chessboard .rank-8::after {
+     content: '8';
+   }
+
+   .chessboard .square {
+       display: block;
+       background-color: hotpink;
+       width: 12.5%; padding-bottom: 12.5%;
+       outline: 1px solid;
+       float: left
+   }
+
+   .row:nth-child(even) .square:nth-child(even) {
+     background-color: hotpink;
+   }
+   .row:nth-child(even) .square:nth-child(odd) {
+     background-color: deeppink;
+   }
+
+   .square:nth-child(even) {
+     background-color: deeppink;
+   }
+
+   .buttons buttons{
+     background-color: deeppink;
+   }
+
+   .white::before,
+   .black::before {
+     position: absolute;
+     width: 12.5%;
+     font-size: 300%;
+     text-align: center;
+   }
+
+   .chessboard .row .white.pawn::before {
+     content: '\2659';
+     position: absolute;
+   }
+
+   .chessboard .row .white.rook::before {
+     content: '\2656';
+     position: absolute;
+   }
+
+   .chessboard .row .white.knight::before {
+     content: '\2658';
+     position: absolute;
+   }
+
+   .chessboard .row .white.bishop::before {
+     content: '\2657';
+     position: absolute;
+   }
+
+   .chessboard .row .white.queen::before {
+     content: '\2655';
+     position: absolute;
+   }
+
+   .chessboard .row .white.king::before {
+     content: '\2654';
+     position: absolute;
+   }
+
+   .chessboard .row .black.pawn::before {
+     content: '\265f';
+     position: absolute;
+   }
+
+   .chessboard .row .black.rook::before {
+     content: '\265c';
+     position: absolute;
+   }
+
+   .chessboard .row .black.knight::before {
+     content: '\265e';
+     position: absolute;
+   }
+
+   .chessboard .row .black.bishop::before {
+     content: '\265d';
+     position: absolute;
+   }
+
+   .chessboard .row .black.queen::before {
+     content: '\265b';
+     position: absolute;
+   }
+
+   .chessboard .row .black.king::before {
+     content: '\265a';
+     position: absolute;
+   }
 
 
 
