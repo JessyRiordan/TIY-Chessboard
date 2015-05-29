@@ -1,0 +1,16 @@
+{
+  "name": "TIY-Chessboard",
+  "version": "0.0.0",
+  "homepage": "https://github.com/JessyRiordan/TIY-Chessboard",
+  "authors": [
+    "Jessy Riordan <jessy.riordan@gmail.com>"
+  ],
+  "license": "CC0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
