@@ -197,6 +197,74 @@ textarea {
      background-color: deeppink;
    }
 
+   .white::before,
+   .black::before {
+     position: absolute;
+     width: 12.5%;
+     font-size: 300%;
+     text-align: center;
+   }
+
+   .chessboard .row .white.pawn::before {
+     content: '\2659';
+     position: absolute;
+   }
+
+   .chessboard .row .white.rook::before {
+     content: '\2656';
+     position: absolute;
+   }
+
+   .chessboard .row .white.knight::before {
+     content: '\2658';
+     position: absolute;
+   }
+
+   .chessboard .row .white.bishop::before {
+     content: '\2657';
+     position: absolute;
+   }
+
+   .chessboard .row .white.queen::before {
+     content: '\2655';
+     position: absolute;
+   }
+
+   .chessboard .row .white.king::before {
+     content: '\2654';
+     position: absolute;
+   }
+
+   .chessboard .row .black.pawn::before {
+     content: '\265f';
+     position: absolute;
+   }
+
+   .chessboard .row .black.rook::before {
+     content: '\265c';
+     position: absolute;
+   }
+
+   .chessboard .row .black.knight::before {
+     content: '\265e';
+     position: absolute;
+   }
+
+   .chessboard .row .black.bishop::before {
+     content: '\265d';
+     position: absolute;
+   }
+
+   .chessboard .row .black.queen::before {
+     content: '\265b';
+     position: absolute;
+   }
+
+   .chessboard .row .black.king::before {
+     content: '\265a';
+     position: absolute;
+   }
+
 
 
 
