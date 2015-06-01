@@ -193,8 +193,20 @@ textarea {
      background-color: deeppink;
    }
 
-   .buttons buttons{
+   .button {
+     display: inline-block;
+     width: 100%;
+     text-align: center;
+
+   }
+   .button .first,
+   .button .prev,
+   .button .play-pause,
+   .button .next,
+   .button .last {
      background-color: deeppink;
+     color: white;
+     font-size: 175%;
    }
 
    .white::before,
@@ -205,33 +217,37 @@ textarea {
      text-align: center;
    }
 
+   .white::before{
+     color: white;
+   }
+
    .chessboard .row .white.pawn::before {
-     content: '\2659';
+     content: '\265f';
      position: absolute;
    }
 
    .chessboard .row .white.rook::before {
-     content: '\2656';
+     content: '\265c';
      position: absolute;
    }
 
    .chessboard .row .white.knight::before {
-     content: '\2658';
+     content: '\265e';
      position: absolute;
    }
 
    .chessboard .row .white.bishop::before {
-     content: '\2657';
+     content: '\265d';
      position: absolute;
    }
 
    .chessboard .row .white.queen::before {
-     content: '\2655';
+     content: '\265b';
      position: absolute;
    }
 
    .chessboard .row .white.king::before {
-     content: '\2654';
+     content: '\265a';
      position: absolute;
    }
 
