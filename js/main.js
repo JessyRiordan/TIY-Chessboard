@@ -1,18 +1,31 @@
 (function(window) {
 
+  // Clicking through the moves one by one.... if you keep clicking next it kinda keeps playing
+
   $('.next').click(function() {
-    chess.counter = (chess.counter + 1) % chess.game.length;
-    chess.move(chess.game[chess.counter]);
+    // chess.counter = (chess.counter + 1) % chess.game.length;
+
+      if (chess.counter < chess.game.length) {
+        chess.moveForward(chess.game[chess.counter]);
+        chess.counter = chess.counter + 1;
+      };
   });
+
+  // Going backwards... eventually from current spot in game
 
   $('.prev').click(function() {
-    chess.counter = (chess.counter - 1) % chess.game.length;
-    chess.move(chess.reverseGame[chess.counter]);
+
+    if (chess.counter < chess.game.length) {
+      chess.moveBackward(chess.game[chess.counter]);
+      chess.counter = chess.counter - 1;
+    };
   });
 
+  // From opening to close
+
   $('.last').click(function() {
-    for (i = 0; i < chess.game.length; i++) {
-      chess.move(chess.game[i]);
+    for (chess.counter; chess.counter < chess.game.length; chess.counter++) {
+      chess.move(chess.game[chess.counter]);
     };
   });
 
