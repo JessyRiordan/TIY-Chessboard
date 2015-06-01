@@ -5,6 +5,11 @@
     chess.move(chess.game[chess.counter]);
   });
 
+  $('.prev').click(function() {
+    chess.counter = (chess.counter - 1) % chess.game.length;
+    chess.move(chess.reverseGame[chess.counter]);
+  });
+
   $('.last').click(function() {
     for (i = 0; i < chess.game.length; i++) {
       chess.move(chess.game[i]);

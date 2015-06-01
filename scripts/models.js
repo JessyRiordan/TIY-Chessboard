@@ -12,6 +12,18 @@
       ['.rank-1', '.file-g', '.rank-3', '.file-f', 'white knight']
    ];
 
+   var reverseGame = [
+     ['.rank-4', '.file-d', '.rank-2', '.file-d', 'white pawn'],
+     ['.rank-6', '.file-f', '.rank-8', '.file-g', 'black knight'],
+     ['.rank-4', '.file-c', '.rank-2', '.file-c', 'white pawn'],
+     ['.rank-6', '.file-e', '.rank-7', '.file-e', 'black pawn'],
+     ['.rank-3', '.file-g', '.rank-2', '.file-g', 'white pawn'],
+     ['.rank-5', '.file-d', '.rank-7', '.file-d', 'black pawn'],
+     ['.rank-2', '.file-g', '.rank-1', '.file-f', 'white bishop'],
+     ['.rank-7', '.file-e', '.rank-8', '.file-f', 'black bishop'],
+     ['.rank-3', '.file-f', '.rank-1', '.file-g', 'white knight']
+   ];
+
     var counter = -1
 
     function move(whichMove) {
@@ -23,7 +35,8 @@
 
         'game': game,
         'move': move,
-        'counter': counter
+        'counter': counter,
+        'reverseGame': reverseGame
 
     };
 })(window);
